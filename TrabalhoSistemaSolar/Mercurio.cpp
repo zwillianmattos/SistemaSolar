@@ -12,5 +12,6 @@ void Mercurio::draw() {
     glutSolidSphere(0.01, 100, 100);
     angle1 += 0.9;
     glPopMatrix();
+    glColor3f(1, 1, 1);
     defineOrbita(0.12);
 }

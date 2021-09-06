@@ -3,8 +3,6 @@
 #include <GL\freeglut.h>
 #include "orbita.h"
 
-
-
 void Sol::draw() {
     glColor3f(1, 1, 0);
     glPushMatrix();

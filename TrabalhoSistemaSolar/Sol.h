@@ -4,7 +4,7 @@
 class Sol : public Orbita
 {
 	public:
-		Sol(float radius);
+		Sol();
 		GLint x, y;
 		void draw();
 };

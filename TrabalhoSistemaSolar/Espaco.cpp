@@ -12,8 +12,7 @@ Espaco::Espaco() {
 
 void Espaco::draw() {
     glEnable(GL_TEXTURE_2D);
-
-   
+	glColor3f(1, 0, 1);
 	glPushMatrix();
 		glLoadIdentity();
 
@@ -29,7 +28,6 @@ void Espaco::draw() {
 			glVertex3f(-1, 1, 0);
 		glEnd();
 	glPopMatrix();
-
 
     glDisable(GL_TEXTURE_2D);
 

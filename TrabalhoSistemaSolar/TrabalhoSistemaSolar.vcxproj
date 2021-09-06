@@ -19,17 +19,33 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Chronos.cpp" />
     <ClCompile Include="Espaco.cpp" />
+    <ClCompile Include="Jupiter.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Marte.cpp" />
     <ClCompile Include="Mercurio.cpp" />
+    <ClCompile Include="Netuno.cpp" />
     <ClCompile Include="Orbita.cpp" />
+    <ClCompile Include="Saturno.cpp" />
     <ClCompile Include="Sol.cpp" />
+    <ClCompile Include="Terra.cpp" />
+    <ClCompile Include="Urano.cpp" />
+    <ClCompile Include="Venus.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Chronos.h" />
     <ClInclude Include="Espaco.h" />
+    <ClInclude Include="Jupiter.h" />
+    <ClInclude Include="Marte.h" />
     <ClInclude Include="Mercurio.h" />
+    <ClInclude Include="Netuno.h" />
     <ClInclude Include="Orbita.h" />
+    <ClInclude Include="Saturno.h" />
     <ClInclude Include="Sol.h" />
+    <ClInclude Include="Terra.h" />
+    <ClInclude Include="Urano.h" />
+    <ClInclude Include="Venus.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
