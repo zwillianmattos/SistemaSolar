@@ -12,10 +12,10 @@ Espaco::Espaco() {
 
 void Espaco::draw() {
     glEnable(GL_TEXTURE_2D);
-	glColor3f(1, 0, 1);
+	
 	glPushMatrix();
 		glLoadIdentity();
-
+		glColor3f(0.5, 0.5, 0.5);
 		configureTexture();
 		glBegin(GL_QUADS);
 			glTexCoord2f(0, 0);

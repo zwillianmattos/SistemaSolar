@@ -30,9 +30,10 @@ Netuno* netuno;
 Chronos* chronos;
 
 void draw(void) {
-	glLoadIdentity();
-	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 	glClear(GL_COLOR_BUFFER_BIT);
+	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+	glLoadIdentity();
+
 	espaco->draw();
 	//sol
 	sol->draw();
@@ -54,9 +55,22 @@ void draw(void) {
 	netuno->draw();
 	//timeline
 	chronos->draw();
-	glFlush();
+
 	glutSwapBuffers();
+	glFlush();
 }
+
+// OpenGL window reshape routine.
+void resize(int w, int h)
+{
+	glViewport(0, 0, (GLsizei)w, (GLsizei)h);
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	gluPerspective(90.0, (float)w / (float)h, 1.0, 100.0);
+	glMatrixMode(GL_MODELVIEW);
+
+}
+
 
 void init(void) {
 	glMatrixMode(GL_PROJECTION);
@@ -69,11 +83,12 @@ int main(int argc, char* argv[], char* envp[])
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DEPTH | GLUT_SINGLE | GLUT_RGBA);
 	glutInitWindowPosition(100, 100);
-	glutInitWindowSize(900, 740);
+	glutInitWindowSize(1024, 768);
 	glutCreateWindow("Solar System");
+	init();
 	glutDisplayFunc(draw);
 	glutIdleFunc(draw);
-	init();
 	glutMainLoop();
 	
+	return 0;
 }
