@@ -30,7 +30,6 @@ void Espaco::draw() {
 	glPopMatrix();
 
     glDisable(GL_TEXTURE_2D);
-
 }
 
 void Espaco::configureTexture() {

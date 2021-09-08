@@ -5,7 +5,7 @@
 
 float  anguloUrano = 0;
 void Urano::draw() {
-    glColor3f(0, 1, 1);
+    glColor3f(0.333, 0.501, 0.666);
     glPushMatrix();
         glRotatef(anguloUrano, 0, 0, 1);
         glTranslatef(0.7, 0.0, 0.0);

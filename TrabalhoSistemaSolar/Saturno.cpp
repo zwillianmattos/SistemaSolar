@@ -6,18 +6,18 @@
 float anguloSaturno = 0;
 
 void Saturno::draw() {
-    glColor3f(1, 0.8, 0.6);
+    glColor3f(0.690, 0.560, 0.207);
     glPushMatrix();
-    glRotatef(anguloSaturno, 0, 0, 1);
-    glTranslatef(0.6, 0.0, 0.0);
-    glutSolidSphere(0.025, 100, 100);
+        glRotatef(anguloSaturno, 0, 0, 1);
+        glTranslatef(0.6, 0.0, 0.0);
+        glutSolidSphere(0.025, 100, 100);
 
-    glPushMatrix();
-    glRotatef(-anguloSaturno, 0, 0, 1);
-    Aneis();
-    glPopMatrix();
+        glPushMatrix();
+            glRotatef(-anguloSaturno, 0, 0, 1);
+            Aneis();
+        glPopMatrix();
 
-    anguloSaturno += 0.4;
+        anguloSaturno += 0.4;
     glPopMatrix();
     glColor3f(1, 1, 1);
     defineOrbita(0.6);

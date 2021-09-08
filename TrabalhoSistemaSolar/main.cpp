@@ -30,7 +30,6 @@ Netuno* netuno;
 Chronos* chronos;
 
 void draw(void) {
-
 	glLoadIdentity();
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 	glClear(GL_COLOR_BUFFER_BIT);
@@ -53,10 +52,8 @@ void draw(void) {
 	urano->draw();
 	//netuno
 	netuno->draw();
-
 	//timeline
 	chronos->draw();
-
 	glFlush();
 	glutSwapBuffers();
 }
@@ -73,7 +70,6 @@ int main(int argc, char* argv[], char* envp[])
 	glutInitDisplayMode(GLUT_DEPTH | GLUT_SINGLE | GLUT_RGBA);
 	glutInitWindowPosition(100, 100);
 	glutInitWindowSize(900, 740);
-
 	glutCreateWindow("Solar System");
 	glutDisplayFunc(draw);
 	glutIdleFunc(draw);
