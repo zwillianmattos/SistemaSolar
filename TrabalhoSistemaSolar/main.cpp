@@ -60,17 +60,6 @@ void draw(void) {
 	glFlush();
 }
 
-// OpenGL window reshape routine.
-void resize(int w, int h)
-{
-	glViewport(0, 0, (GLsizei)w, (GLsizei)h);
-	glMatrixMode(GL_PROJECTION);
-	glLoadIdentity();
-	gluPerspective(90.0, (float)w / (float)h, 1.0, 100.0);
-	glMatrixMode(GL_MODELVIEW);
-
-}
-
 
 void init(void) {
 	glMatrixMode(GL_PROJECTION);
